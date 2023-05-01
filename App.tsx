@@ -11,10 +11,23 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
+      
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} options={{headerShown:false }} />
-        <Stack.Screen name="Home" component={Home} options={{headerShown:false }} />
-        <Stack.Screen name="VallarisMap" component={VallarisMap} options={{headerShown:false }} />
+      
+       
+        <Stack.Screen 
+        name="VallarisMap"
+        component={VallarisMap} 
+        options={{
+          headerTitleAlign:"center",
+          headerBackTitle:"back",
+          title:"Vallaris Map",
+          headerTintColor:"black",
+        
+        }} 
+        
+        /> 
       </Stack.Navigator>
     </NavigationContainer>
   )

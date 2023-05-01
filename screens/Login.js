@@ -2,9 +2,8 @@ import { StyleSheet, Text, View, Image, Alert } from 'react-native';
 import React, { useState, userEffect } from 'react';
 import { TextInput, Button } from 'react-native-paper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import LoginBtn from '../assets/Buttons/LogingBtn';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 
 const myButton = (
   <Icon.Button
@@ -73,6 +72,7 @@ const Login = ({ navigation }) => {
           color: "rgb(178, 199, 86)"
         }}>Vallaris</Text> </Text>
         <View>
+          
           <Text style={{
           textAlign: "center",
           fontSize: 14,
@@ -82,6 +82,8 @@ const Login = ({ navigation }) => {
             Enter e-mail and password for start
           </Text>
         </View>
+        
+       
         <TextInput
 
           label="Email"
@@ -92,7 +94,9 @@ const Login = ({ navigation }) => {
           style={{
             marginVertical:12
           }}
+          
         />
+     
         <TextInput
           label="Password"
           secureTextEntry
